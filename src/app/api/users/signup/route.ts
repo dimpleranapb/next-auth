@@ -29,6 +29,7 @@ export async function POST(request: NextRequest) {
 
     const salt = await bcryptjs.genSalt(10);
     const hashedPassword = await bcryptjs.hash(password, salt);
+    console.log(email)
 
     const newUser = new User({
       username,
@@ -37,9 +38,10 @@ export async function POST(request: NextRequest) {
     });
 
     const savedUser = await newUser.save();
+    console.log(savedUser)
 
     //Send Verification Email
-    await sendEmail({ email, emailType: "Verify", userId: savedUser._id });
+    await sendEmail({ email, emailType: "VERIFY", userId: savedUser._id });
 
     return NextResponse.json({
       message: "user registered successfully",
