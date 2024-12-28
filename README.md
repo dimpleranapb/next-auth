@@ -1,5 +1,23 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Basic Next.js App with Authentication, Middleware, and Dynamic Routes
 
+This is a **basic Next.js application** demonstrating how to set up **authentication** with MongoDB, implement **middleware**, and utilize **dynamic routing** in a Next.js app.  
+
+## Features
+
+- **NextAuth Integration**: Secure authentication setup using MongoDB as the database.
+- **Middleware**: Protect routes and enhance server-side logic with Next.js middleware.
+- **Dynamic Routes**: Implement dynamic routing to manage scalable and flexible URLs.
+- **Next.js Best Practices**: Built with `create-next-app` for a modern developer experience.
+
+## Getting Started
+
+### Prerequisites
+
+Ensure you have the following installed:
+
+- Node.js >= 16
+- MongoDB (local or hosted)
+- A package manager like npm, yarn, pnpm, or bun
 ## Getting Started
 
 First, run the development server:
